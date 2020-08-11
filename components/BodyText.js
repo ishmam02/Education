@@ -2,16 +2,16 @@ import React from 'react';
 import { Text, StyleSheet, Dimensions } from 'react-native';
 import Color from '../constants/Color';
 
-const Heading = props => (
+const BodyText = props => (
   <Text style={{ ...styles.body, ...props.style }}>{props.children}</Text>
 );
 
 const styles = StyleSheet.create({
   body: {
-    fontSize: Dimensions.get('window').width * .0585,
+    fontSize: Dimensions.get('window').width * .039,
     color: Color.secondary,
-    fontFamily: 'Rubik-Medium'
+    fontFamily: 'Rubik'
   }
 });
 
-export default Heading;
+export default BodyText;
